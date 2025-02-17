@@ -73,8 +73,6 @@ namespace SimpleHashEncryptionTool
         private static string Encrypt(string phrase, string password)
         {
             StringBuilder sb = new StringBuilder();
-            //phrase = phrase.ToLower();
-            //password = password.ToLower();
             char[] passChars = password.ToCharArray();
             char[] phraseChars = phrase.ToCharArray();
 
@@ -95,7 +93,6 @@ namespace SimpleHashEncryptionTool
         private static string Decrypt(string phrase, string password)
         {
             StringBuilder sb = new StringBuilder();
-            //password = password.ToLower();
             char[] passChars = password.ToCharArray();
             string[] phraseChunks = phrase.Split(".");
 
